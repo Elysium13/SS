@@ -305,34 +305,35 @@ html, body {
 /* line 18, ../scss/main.scss */
 .window:nth-child(1) {
   top: 0%;
+  height:87%;
 }
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(2) {
   background: #1babb7;
-  top: 100%;
+  top: 87%;
 }
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(3) {
   background: #6ab29f;
-  top: 200%;
+  top: 186%;
 }
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(4) {
   background: #333a3e;
-  top: 300%;
+  top: 286%;
 }
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(5) {
   background: #d0482b;
-  top: 400%;
+  top: 386%;
 }
 
 /* line 18, ../scss/main.scss */
 .window:nth-child(6) {
   background: #231f20;
-  top: 500%;
+  top: 486%;
 }

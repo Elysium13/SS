@@ -169,7 +169,7 @@ $(window).scroll(function(e) {
     var scroller_anchor = $(".scroller_anchor").offset().top;
      
     // Check if the user has scrolled and the current position is after the scroller start location and if its not already fixed at the top 
-    if ($(this).scrollTop() >= scroller_anchor && $('.scroller').css('position') != 'fixed') 
+    if ($(this).scrollTop() > scroller_anchor && $('.scroller').css('position') != 'fixed') 
     {    // Change the CSS of the scroller to hilight it and fix it at the top of the screen.
         $('.scroller').css({
             'position': 'fixed',
@@ -177,6 +177,10 @@ $(window).scroll(function(e) {
         });
         // Changing the height of the scroller anchor to that of scroller so that there is no change in the overall height of the page.
         $('.scroller_anchor').css('height', '50px');
+        
+        $('.logoimg').css('width','10%');
+        $('.logoimg').css('margin-top','0%');
+
     } 
     else if ($(this).scrollTop() < scroller_anchor && $('.scroller').css('position') != 'relative') 
     {    // If the user has scrolled back to the location above the scroller anchor place it back into the content.
@@ -188,7 +192,21 @@ $(window).scroll(function(e) {
         $('.scroller').css({
             'position': 'relative'
         });
+        $('.logoimg').css('width','10%');
+        
+
     }
+    //function to parallax scroll the logo image
+    if ($(this).scrollTop() < scroller_anchor)
+    {
+        var ypos=($(this).scrollTop());
+        var ht=$(window).height();
+        ht=ht*0.87;
+        ypos=ypos-ht;
+        ypos=ypos/8;
+        $('.logoimg').css('margin-top',ypos);
+    }
+    
 });
 
 
@@ -217,4 +235,3 @@ $(function() {
 
 
 
-        
