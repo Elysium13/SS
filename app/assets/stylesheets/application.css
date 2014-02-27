@@ -30,6 +30,7 @@
 	height:0px; 
 	margin:0; 
 	padding:0;
+	
 }
 .scroller
 {
@@ -97,12 +98,8 @@ display:inline;
 float:left;
 margin-right:3%;
 }
-.menu ul a:hover{
+a:hover{
     color: #000;
-}
-li.active a
-{
-	color:black;
 }
 .section1
 {

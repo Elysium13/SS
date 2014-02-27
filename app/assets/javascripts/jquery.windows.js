@@ -197,16 +197,47 @@ $(window).scroll(function(e) {
 
     }
     //function to parallax scroll the logo image
+    var ht=$(window).height();
     if ($(this).scrollTop() < scroller_anchor)
     {
         var ypos=($(this).scrollTop());
-        var ht=$(window).height();
         ht=ht*0.87;
         ypos=ypos-ht;
         ypos=ypos/8;
         $('.logoimg').css('margin-top',ypos);
     }
-    
+    ht=$(window).height();
+    ht=ht/2;
+    if ($(this).scrollTop() >ht*9)
+    {
+        $('.menuItem a').css('color','white');
+        $('.mI6 a').css('color','black');
+    }
+    else if ($(this).scrollTop() >ht*7)
+    {
+        $('.menuItem a').css('color','white');
+        $('.mI5 a').css('color','black');
+    }
+    else if ($(this).scrollTop() >ht*5)
+    {
+        $('.menuItem a').css('color','white');
+        $('.mI4 a').css('color','black');
+    }
+    else if ($(this).scrollTop() >ht*3)
+    {
+        $('.menuItem a').css('color','white');
+        $('.mI3 a').css('color','black');
+    }
+    else if ($(this).scrollTop() >ht*1)
+    {
+        $('.menuItem a').css('color','white');
+        $('.mI2 a').css('color','black');
+    }
+    else
+    {
+        $('.menuItem a').css('color','white');
+        $('.mI1 a').css('color','black');
+    }
 });
 
 
