@@ -1,0 +1,172 @@
+.title
+{
+	border:10px solid black;
+	margin:auto 20%;
+	font-size:10px;
+	display: block;
+}
+.title:hover, .title:hover h1{
+	color:white;
+	border-color: white;
+
+}
+.scrollr
+{
+	width:100%;
+	margin:0;
+	margin-top:5%;
+	background-color:rgba(10,10,10,0.5);
+	padding-top:5%;
+	padding-bottom:5%;
+	color:white;
+	overflow:hidden;
+}
+.scrollr h1
+{
+	color:white;
+}
+.scroller_anchor
+{
+	height:0px; 
+	margin:0; 
+	padding:0;
+}
+.scroller
+{
+
+	background:#ffd600;
+	margin:0 0 10px;
+	z-index:100;
+	height: 13%; 
+	font-size:1.5em; 
+	font-weight:bold; 
+	text-align:center; 
+	width:100%;
+box-shadow: 0px 2px 5px #ffa;
+}
+.logoimg
+{
+	margin-left:2%;
+	width:10%;
+	float:left;
+	z-index: 200;
+}
+.logoname
+{
+	margin-left:1%;
+	padding-top: 0.5%;
+	float:left;
+text-shadow: 2px 1px yellow;
+font-size:2.4em;
+font-family: SF_Archery_Black;
+color:black;
+font-weight: lighter;
+margin-top: 0;
+}
+.scrollr:nth-child(2)
+{
+	top:100%;
+}
+.menu
+{
+	float: right;
+	width:60%;
+}
+.menu ul
+{
+list-style-type:none;
+margin-bottom:0;
+padding:0;
+margin-right:1%;
+position: relative;
+}
+.menu ul a
+{
+	display:block;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size:1.5em;
+    outline-color: transparent;
+}
+
+.menu ul li
+{
+display:inline;
+float:left;
+margin-right:2%;
+}
+.menu ul a:hover{
+    color: #000;
+}
+li.active a
+{
+	color:black;
+}
+.section1
+{
+	background-image: url(/assets/parallax4.jpg);
+}
+.bgWrapper{
+	position:fixed;
+	background:url(/assets/save.jpeg) top center no-repeat; 
+	height:100%; 
+	width:100%; 
+	top:0; 
+	left:0;
+}
+.shark{
+	position:fixed;
+	background:url(/assets/1.png);
+	width:250px; 
+	height:187px; 
+	left:50%; 
+	margin-left:100px;
+	margin-top:400px;
+}
+.fish{
+	position:fixed;
+	background:url(/assets/2.png);
+	width:300px;
+	height:246px;
+	left:50%;
+	margin-left:200px;
+	margin-top:500px;
+}
+.vp_background-image{
+	position:fixed;
+	background:url(/assets/parallax4.jpg) no-repeat;
+	height:100%; 
+	width:100%; 
+	background-size:cover;
+	top:0; 
+	left:0;
+	
+}
+.vp_home_heading{
+
+	width:100%;
+	height:20%;
+	font-size:3em;
+	position:relative;
+	margin-top:10%;
+	margin-left:0;
+	font-weight:bold;
+	text-align:center;
+}
+.vp_home_heading:hover{
+	
+color:rgba(250,165,14,1);
+	/* 242 142 19
+	255,182,0,1
+		
+	*/
+}
+.vp_home_scroll_head{
+	height:250px;
+	position:relative;
+	width:100%;
+	background-color:red;
+	margin-top:5%;
+	background-color:rgba(0,0,0,0.5);
+}
